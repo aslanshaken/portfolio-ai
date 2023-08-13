@@ -31,7 +31,6 @@ function Header() {
       sx={{
         backgroundColor: 'transparent',
         boxShadow: 'none',
-        marginTop: '30px',
       }}
     >
       <Container maxWidth="xl">
