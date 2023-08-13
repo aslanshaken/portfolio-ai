@@ -16,7 +16,7 @@ const Banner = () => {
       >
         <Container maxWidth="lg">
           <Grid container spacing={2}>
-            <Grid item xs={6} md>
+            <Grid item sm={6} md>
               <Box
                 sx={{
                   paddingTop: '140px',
@@ -98,7 +98,7 @@ const Banner = () => {
                 </Button>
               </Box>
             </Grid>
-            <Grid item xs={6} md="auto">
+            <Grid item sm={6} md="auto">
               <Box
                 sx={{
                   position: 'relative',

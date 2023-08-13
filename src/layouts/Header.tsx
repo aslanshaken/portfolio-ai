@@ -48,7 +48,7 @@ function Header() {
               color: 'inherit',
               textDecoration: 'none',
             }}
-          >
+           >
             Професиональный
             <br />
             Буккипер
@@ -90,7 +90,7 @@ function Header() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
             variant="h5"
             noWrap
@@ -101,7 +101,7 @@ function Header() {
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontWeight: 700,
-              fontSize: '2rem',
+              fontSize: {xs:'1.5rem', sm:"1.8rem",  lg:"2rem"},
               color: 'inherit',
               textDecoration: 'none',
             }}
@@ -123,15 +123,16 @@ function Header() {
           </Box>
 
           <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center', gap: 1 }}>
-            <PhoneIcon />
+           <Box component="a"  href="tel:+4733378901"> <PhoneIcon /></Box>
             <Typography
               component="a"
-              href="/"
+              href="tel:+4733378901"
               sx={{
                 fontWeight: 500,
                 fontSize: '24px',
                 color: 'inherit',
                 textDecoration: 'none',
+                display:{xs:"none" , md:"inline-block"}
               }}
             >
               +1(917)-200-7609

@@ -47,7 +47,7 @@ const Students: React.FC = () => {
       <Grid container spacing={0} py={10}>
         <Grid item xs={12}>
           <Typography variant="h2" mb={5}>
-            <span className="TextGradientPrimary">МОИ СТУДЕНТЫ</span> КОТОРЫЕ УЖЕ
+          <Box component="span" className="TextGradientPrimary">МОИ СТУДЕНТЫ</Box> КОТОРЫЕ УЖЕ
             <Box component="br" />
             ЗАРАБАТЫВАЮТ НА БУККИПИНГЕ
           </Typography>

@@ -14,6 +14,9 @@ const Aynur = () => {
   const theme = useTheme();
   return (
     <>
+          <Container sx={{marginTop:4}}>
+          <Typography variant="h2" mb={6}><Box component="span" className="TextGradientPrimary">КТО ПРОВОДИТ</Box> ОБУЧЕНИЕ?</Typography>
+          </Container>
       <Box
         sx={{
           backgroundImage: `url(${AynurBg})`,
@@ -21,6 +24,7 @@ const Aynur = () => {
           backgroundRepeat: 'no-repeat',
           paddingTop: '60px',
           display: 'flex',
+          flexWrap:"wrap"
         }}
       >
         <Container maxWidth="lg">
@@ -63,6 +67,7 @@ const Aynur = () => {
                     backgroundColor: '#242524',
                     boxShadow: '-3px -2px 11px 0px rgba(109, 109, 109, 0.19), 2px 2px 12px 0px rgba(0, 0, 0, 0.34)',
                     display: 'flex',
+                    flexWrap:"wrap",
                     alignItems: 'center',
                     justifyContent: 'center',
                     marginLeft: 2,
@@ -76,6 +81,7 @@ const Aynur = () => {
                       borderRadius: '50%',
                       background: theme.palette.gradient.warning,
                       display: 'flex',
+                      flexWrap:"wrap",
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}
@@ -93,6 +99,7 @@ const Aynur = () => {
                 sx={{
                   display: 'flex',
                   alignItems: 'center',
+                  flexWrap:"wrap",
                   gap: 4,
                 }}
               >
