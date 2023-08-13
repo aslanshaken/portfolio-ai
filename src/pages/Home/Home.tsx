@@ -1,19 +1,19 @@
 import React from 'react';
 import Banner from '@/components/Banner';
-import Footer from '@/layouts/Footer';
-import Faq from '@/components/Home/Faq'
-import CourseProgram from '@/components/Home/CourseProgram'
-import  CourseFees  from '@/components/Home/CourseFees';
+import WhoIsThis from '@/components/WhoIsThis';
+import Students from '@/components/Students';
+import Aynur from '../../components/Aynur';
+import CustomizedAccordions from '@/components/CourseProgram';
 
 const Home = () => {
   return (
     <>
-  <Banner />
-  <CourseProgram/>
-  <CourseFees/>
-  <Faq/>
-  <Footer/>
-  </>
+      <Banner />
+      <WhoIsThis />
+      <Students />
+      <Aynur />
+      <CustomizedAccordions />
+    </>
   );
 };
 

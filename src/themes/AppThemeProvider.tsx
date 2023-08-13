@@ -43,46 +43,6 @@ declare module '@mui/material/styles' {
   interface TypeBackground {
     opposite: string;
   }
-  interface TypographyVariants {
-    CTA1: React.CSSProperties;
-    CTA2: React.CSSProperties;
-    CTA3: React.CSSProperties;
-    body3: React.CSSProperties;
-    body4: React.CSSProperties;
-    Body1: React.CSSProperties;
-    Body2: React.CSSProperties;
-    Body3: React.CSSProperties;
-    Body1Medium: React.CSSProperties;
-    Body1SemiBold: React.CSSProperties;
-  }
-
-  // allow configuration using `createTheme`
-  interface TypographyVariantsOptions {
-    CTA1?: React.CSSProperties;
-    CTA2?: React.CSSProperties;
-    CTA3?: React.CSSProperties;
-    body3?: React.CSSProperties;
-    body4?: React.CSSProperties;
-    Body1?: React.CSSProperties;
-    Body2?: React.CSSProperties;
-    Body3?: React.CSSProperties;
-    Body1Medium?: React.CSSProperties;
-    Body1SemiBold?: React.CSSProperties;
-  }
-}
-declare module '@mui/material/Typography' {
-  interface TypographyPropsVariantOverrides {
-    CTA1: true;
-    CTA2: true;
-    CTA3: true;
-    body3: true;
-    body4: true;
-    Body1: true;
-    Body2: true;
-    Body3: true;
-    Body1Medium: true;
-    Body1SemiBold: true;
-  }
 }
 export const AppThemeProvider: React.FC<Props> = ({ children }) => {
   const mode = useAppSelector((state) => state.user.mode);
@@ -153,92 +113,26 @@ export const AppThemeProvider: React.FC<Props> = ({ children }) => {
         },
         gradient: {
           primary: 'linear-gradient(137deg, #41635C 0%, #528177 100%)',
+          warning: 'linear-gradient(137deg, #F9CF3D 0%, #FF9B3F 100%)',
         },
       },
 
       typography: {
         fontFamily: 'Roboto, sans-serif',
 
-        // h1: {
-        //   fontSize: '26px',
-        //   fontWeight: '600',
-        //   // lineHeight: '33px',
-        // },
-        // h2: {
-        //   fontSize: '22px',
-        //   fontWeight: '600',
-        //   // lineHeight: '28px',
-        // },
-        // h3: {
-        //   fontSize: '20px',
-        //   fontWeight: '600',
-        //   // lineHeight: '25px',
-        // },
-        // h4: {
-        //   fontSize: '18px',
-        //   fontWeight: '600',
-        //   // lineHeight: '23px',
-        // },
-        // h5: {
-        //   fontSize: '16px',
-        //   fontWeight: '500',
-        //   // lineHeight: '20px',
-        // },
-
-        CTA1: {
-          fontSize: '28px',
-          fontWeight: '500',
-          // lineHeight: '35px',
+        h1: {
+          fontSize: '2.5rem',
+          fontWeight: '900',
+          '@media (max-width:1200px)': {
+            fontSize: '2rem !important',
+          },
         },
-        CTA2: {
-          fontSize: '18px',
-          fontWeight: '500',
-          // lineHeight: '23px',
-        },
-        CTA3: {
-          fontSize: '16px',
-          fontWeight: '400',
-          // lineHeight: '20px',
-        },
-        Body1: {
-          fontFamily: 'Roboto, sans-serif',
-          fontSize: '14px',
-          fontWeight: '400',
-          // lineHeight: '18px',
-        },
-        Body2: {
-          fontFamily: 'Roboto, sans-serif',
-          fontSize: '13px',
-          fontWeight: '400',
-          // lineHeight: '16px',
-        },
-        Body3: {
-          fontFamily: 'Roboto, sans-serif',
-          fontSize: '12px',
-          fontWeight: '400',
-          // lineHeight: '14px',
-        },
-        Body1Medium: {
-          fontFamily: 'Roboto, sans-serif',
-          fontSize: '14px',
-          fontWeight: '500',
-          // lineHeight: '17px',
-        },
-        Body1SemiBold: {
-          fontFamily: 'Roboto, sans-serif',
-          fontSize: '14px',
-          fontWeight: '600',
-          // lineHeight: '17px',
-        },
-        body3: {
-          fontSize: '12px',
-          // lineHeight: '16px',
-          display: 'block',
-        },
-        body4: {
-          fontSize: '10px',
-          // lineHeight: '14px',
-          display: 'block',
+        h2: {
+          fontSize: '2.188rem',
+          fontWeight: '700',
+          '@media (max-width:1200px)': {
+            fontSize: '1.5rem !important',
+          },
         },
       },
 
@@ -247,6 +141,7 @@ export const AppThemeProvider: React.FC<Props> = ({ children }) => {
           styleOverrides: {
             body: {
               backgroundColor: '#2B2C28',
+              color: '#fff',
               '& .MuiContainer-maxWidthLg': {
                 maxWidth: 1320,
               },
@@ -275,6 +170,13 @@ export const AppThemeProvider: React.FC<Props> = ({ children }) => {
           styleOverrides: {
             root: {
               aspectRatio: '1/1',
+            },
+          },
+        },
+        MuiTypography: {
+          styleOverrides: {
+            root: {
+              color: '#fff',
             },
           },
         },
