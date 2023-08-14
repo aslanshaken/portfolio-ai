@@ -134,7 +134,7 @@ function Header() {
            <Box component="a"  href="tel:+1(917)200-7609" marginRight='10px'> <PhoneIcon /></Box>
             <Typography
               component="a"
-              href="tel:+1(917)200-7609"
+              href="tel:+1 (917)200-7609"
               sx={{
                 fontWeight: 500,
                 fontSize: '18px',
@@ -143,7 +143,7 @@ function Header() {
                 display:{xs:"none" , md:"inline-block"}
               }}
             >
-              +1(917)-200-7609
+              +1 (917)-200-7609
             </Typography>
           </Box>
         </Toolbar>

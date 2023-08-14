@@ -11,7 +11,7 @@ const Banner = () => {
       <Box
         sx={{
           background: 'linear-gradient(180deg, rgba(43, 44, 40, 0.00) 39.58%, #2B2C28 88.41%)',
-          paddingBottom: '100px',
+          paddingBottom: '50px',
         }}
       >
         <Container maxWidth="lg">
@@ -19,7 +19,7 @@ const Banner = () => {
             <Grid item sm={6} md>
               <Box
                 sx={{
-                  paddingTop: '140px',
+                  paddingTop: '70px',
                 }}
               >
                 <Typography
@@ -137,6 +137,7 @@ const Banner = () => {
             '& svg': {
               width: '100%',
             },
+            display:{xs:"none" , md:"inline-block"}
           }}
         >
           <BannerNeonText />

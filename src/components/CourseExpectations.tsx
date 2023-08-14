@@ -1,6 +1,6 @@
 import { Container, Grid, Paper, Typography , Box, Stack} from '@mui/material';
 import { experimentalStyled as styled } from '@mui/material/styles';
-import CourseBg from '../../assets/images/coursebg.jpg';
+import CourseBg from '../assets/images/coursebg.jpg';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -62,7 +62,7 @@ const gridsection = {
 }
 export default function ResponsiveGrid() {
   return (
-    <Container sx={{ marginTop: 5 }}>
+    <Container sx={{ marginTop: 10 }}>
       <Typography variant="h2" mb={6}><Box component="span" className="TextGradientPrimary">ЧТО ВАС ЖДЕТ</Box> НА КУРСЕ?</Typography>
     <Box sx={{ flexGrow: 1,backgroundImage: `url(${CourseBg})`, padding: "50px  50px 0px 50px", borderRadius: "10px" }}>
       <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} sx={gridsection}>
@@ -85,7 +85,7 @@ export default function ResponsiveGrid() {
             <Box>
             <Typography variant="h2">03</Typography>
             <Stack>
-            <Typography variant='h3'>*Созвон с Айнур один на один</Typography>
+            <Typography variant='h3'>Созвон с Айнур один на один</Typography>
             <Box component="p">При сдачи экзамена на отлично, вы получите личную консультацию от Айнур. В ходе этой консультации вы сможете разработать план для успешного начала собственной деятельности и открытия собственной бухгалтерской компании.</Box>
             </Stack>
             </Box>
@@ -108,7 +108,7 @@ export default function ResponsiveGrid() {
             <Box>
             <Typography variant="h2">06</Typography>
             <Stack>
-            <Typography variant='h3'>*Пошаговый план как найти первую работу или клиента</Typography>
+            <Typography variant='h3'>Пошаговый план как найти первую работу или клиента</Typography>
             <Box component="p">В Бонусном модуле предоставлены все необходимые шаги, которые помогут вам успешно найти первую работу или клиента.</Box>
             </Stack>
             </Box>

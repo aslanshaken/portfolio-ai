@@ -1,18 +1,16 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Container, Grid, Box, Typography, Card } from '@mui/material';
-import SlideImage from '../assets/images/slider-img.png';
+import Asel from '../assets/images/slider-img.png';
+import Ulan from '../assets/images/ulan.png';
+import Madina from '../assets/images/madina.png';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 interface Item {
   name: string;
   description: string;
-  descriptionTitle: string;
-  descriptionAlbha: string;
-  description2: string;
-  description2Title: string;
-  description2Alpha: string;
+  subDescription: string;
   image: string;
 }
 
@@ -20,25 +18,24 @@ const Students: React.FC = () => {
   const items: Item[] = [
     {
       name: 'Асель Ныгметжанова',
-      descriptionTitle: 'Точка',
-      descriptionAlbha: 'А',
       description: 'Ничего не знала про бухгалтерию, не было работы.',
-      description2Title: 'Точка',
-      description2Alpha: 'Б',
-      description2:
-        'Точка Б: Работает буккипером с Марта 2022 года из Казахстана. По меркам Казахстана зарабатывает в 2 раза больше чем бТратит 10-13 часов в неделю. Так как работа буккипера не занимает много времени имела возможность устроится на вторую работу. Асель ни в чем себе не отказывает и пробует себя в разных сферах.',
-      image: SlideImage,
+      subDescription:
+        'Работает буккипером с Марта 2022 года из Казахстана. По меркам Казахстана зарабатывает в 2 раза больше чем бТратит 10-13 часов в неделю. Так как работа буккипера не занимает много времени имела возможность устроится на вторую работу. Асель ни в чем себе не отказывает и пробует себя в разных сферах.',
+      image: Asel,
     },
     {
       name: 'Улан Досов',
-      descriptionTitle: 'Точка',
-      descriptionAlbha: 'А',
-      description: 'Ничего не знала про бухгалтерию, не было работы.',
-      description2Title: 'Точка',
-      description2Alpha: 'Б',
-      description2:
-        'Учится с утра до вечера в университете Нархоз. Очень хотел иметь свой заработок для достижения финансовой незавизимости и самостоятельности.',
-      image: SlideImage,
+      description: 'Учится с утра до вечера в университете Нархоз. Очень хотел иметь свой заработок для достижения финансовой незавизимости и самостоятельности.',
+      subDescription:
+        'Работает буккипером с Марта 2023 года.Получил свой первый проект Catch Up за $500. После окончания проекта Улан будет вести ежемесячный буккипинг этого же клиента с двумя компаниями. Работа буккипера позволяет Улану совмещать работу и учебу, а так же будучи студентом брать все свои расходы на себя. Планирует самостоятельно оплатить за свое обучение в университете.',
+      image: Ulan,
+    },
+    {
+      name: 'Мадина Талгабекова',
+      description: 'В декрете, заработок 0',
+      subDescription:
+        'Работает онлайн буккипером с Марта 2023 года. Зарплата $10.5/час, выходит в месяц $441. Тратит на работу 1-2 часа в день. Поскольку у Мадины еще есть свободное время, хочет найти еще больше клиентов. ',
+      image: Madina,
     },
   ];
 
@@ -46,9 +43,8 @@ const Students: React.FC = () => {
     <Container maxWidth="lg">
       <Grid container spacing={0} py={10}>
         <Grid item xs={12}>
-          <Typography variant="h2" mb={5}>
+          <Typography variant="h4" mb={5}>
           <Box component="span" className="TextGradientPrimary">МОИ СТУДЕНТЫ</Box> КОТОРЫЕ УЖЕ
-            <Box component="br" />
             ЗАРАБАТЫВАЮТ НА БУККИПИНГЕ
           </Typography>
           <Box
@@ -95,7 +91,7 @@ const ItemComponent: React.FC<ItemComponentProps> = ({ item }) => {
       }}
     >
       <Grid container spacing={5} alignItems="center">
-        <Grid item md={3}>
+        <Grid item md={4}>
           <Box
             component="img"
             sx={{
@@ -109,6 +105,7 @@ const ItemComponent: React.FC<ItemComponentProps> = ({ item }) => {
         </Grid>
         <Grid item md={8}>
           <Typography variant="h2">{item.name}</Typography>
+         <Typography variant="h6" color='gray' marginTop='10px'>Работает из Казахстана</Typography> 
           <p>
             <Box
               component="span"
@@ -117,7 +114,7 @@ const ItemComponent: React.FC<ItemComponentProps> = ({ item }) => {
                 fontWeight: 700,
               }}
             >
-              {item.descriptionTitle}
+              Точка
             </Box>{' '}
             <Box
               component="span"
@@ -127,7 +124,7 @@ const ItemComponent: React.FC<ItemComponentProps> = ({ item }) => {
                 fontWeight: 700,
               }}
             >
-              {item.descriptionAlbha}
+              А:
             </Box>{' '}
             {item.description}
           </p>
@@ -139,7 +136,7 @@ const ItemComponent: React.FC<ItemComponentProps> = ({ item }) => {
                 fontWeight: 700,
               }}
             >
-              {item.description2Title}
+              Точка
             </Box>{' '}
             <Box
               component="span"
@@ -149,9 +146,9 @@ const ItemComponent: React.FC<ItemComponentProps> = ({ item }) => {
                 fontWeight: 700,
               }}
             >
-              {item.description2Alpha}
+              Б:
             </Box>{' '}
-            {item.description2}
+            {item.subDescription}
           </p>
         </Grid>
       </Grid>

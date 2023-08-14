@@ -1,12 +1,11 @@
 import Banner from '@/components/Banner';
-import Faq from '@/components/Home/Faq'
-import CourseProgram from '@/components/Home/CourseProgram'
-import  CourseFees  from '@/components/Home/CourseFees';
-import  CourseExpectations  from '@/components/Home/CourseExpectations'
+import Faq from '@/components/Faq'
+import CourseProgram from '@/components/CourseProgram'
+import  CourseFees  from '@/components/CourseFees';
+import  CourseExpectations  from '@/components/CourseExpectations'
 import WhoIsThis from '@/components/WhoIsThis';
 import Students from '@/components/Students';
 import Aynur from '../../components/Aynur';
-import CustomizedAccordions from '@/components/CourseProgram';
 
 const Home = () => {
   return (
@@ -19,7 +18,6 @@ const Home = () => {
   <Aynur />
   <Students />
   <Faq/>
-      {/* <CustomizedAccordions /> */}
     </>
   );
 };
