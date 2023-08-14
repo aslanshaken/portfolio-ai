@@ -149,7 +149,7 @@ export const AppThemeProvider: React.FC<Props> = ({ children }) => {
                 background: 'linear-gradient(137deg, #41635C 0%, #528177 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
-              },
+              }
             },
           },
         },

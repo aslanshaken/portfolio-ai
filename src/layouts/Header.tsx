@@ -8,7 +8,6 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import AdbIcon from '@mui/icons-material/Adb';
 import { ReactComponent as PhoneIcon } from '../assets/icons/phone-circle.svg';
 import { MenuItem } from '@mui/material';
 
@@ -36,6 +35,7 @@ function Header() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+{/* WEB */}
           <Typography
             noWrap
             component="a"
@@ -44,16 +44,32 @@ function Header() {
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontWeight: 700,
-              fontSize: '2rem',
+              fontSize: '1.5rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
            >
-            Професиональный
-            <br />
-            Буккипер
+          <div>
+            <span className="TextGradientPrimary">П</span>
+            рофесиональный
+            <br/>
+            <span className="TextGradientPrimary">Б</span>
+            уккипер
+          </div>
           </Typography>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'space-evenly' } }}>
+            {pages.map((page) => (
+              <Button
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block', fontSize: '18px', textTransform: 'none' }}
+              >
+                {page}
+              </Button>
+            ))}
+          </Box>
 
+{/* Mobile */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -90,7 +106,6 @@ function Header() {
               ))}
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
             variant="h5"
             noWrap
@@ -106,30 +121,23 @@ function Header() {
               textDecoration: 'none',
             }}
           >
-            Професиональный
-            <br />
-            Буккипер
+          <div>
+            <span className="TextGradientPrimary">П</span>
+            рофесиональный 
+            <br/>
+            <span className="TextGradientPrimary">Б</span>
+            уккипер
+          </div>
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'space-evenly' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block', fontSize: '20px', textTransform: 'none' }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
 
           <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center', gap: 1 }}>
-           <Box component="a"  href="tel:+4733378901"> <PhoneIcon /></Box>
+           <Box component="a"  href="tel:+1(917)200-7609" marginRight='10px'> <PhoneIcon /></Box>
             <Typography
               component="a"
-              href="tel:+4733378901"
+              href="tel:+1(917)200-7609"
               sx={{
                 fontWeight: 500,
-                fontSize: '24px',
+                fontSize: '18px',
                 color: 'inherit',
                 textDecoration: 'none',
                 display:{xs:"none" , md:"inline-block"}
@@ -143,4 +151,5 @@ function Header() {
     </AppBar>
   );
 }
+
 export default Header;
