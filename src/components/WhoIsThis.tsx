@@ -56,7 +56,7 @@ export default function WhoIsThis() {
   ];
 
   return (
-    <Container maxWidth="lg" sx={{ paddingBottom:'50px' }}>
+    <Container maxWidth="lg" sx={{ paddingBottom:'50px', paddingTop: '30px' }}>
       <Typography variant="h2" mb={3}>
         <span className="TextGradientPrimary">ДЛЯ КОГО</span> ЭТО ОБУЧЕНИЕ?
       </Typography>

@@ -8,8 +8,9 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import { ReactComponent as PhoneIcon } from '../assets/icons/phone-circle.svg';
 import { MenuItem } from '@mui/material';
+import Phone from '../assets/images/phone.png'
+
 
 const pages = ['Программа', 'Тарифы', 'О нас', 'Контакты'];
 
@@ -131,7 +132,25 @@ function Header() {
           </Typography>
 
           <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center', gap: 1 }}>
-           <Box component="a"  href="tel:+1(917)200-7609" marginRight='10px'> <PhoneIcon /></Box>
+          
+           <Box
+              component="a"
+              href="tel:+1(917)200-7609"
+              marginRight="10px"
+              sx={{
+                display: 'inline-block',
+                verticalAlign: 'middle',
+              }}
+            >
+              <img
+                src={Phone}
+                alt="Phone icon"
+                style={{
+                  maxWidth: '100%',
+                }}
+              />
+            </Box>
+
             <Typography
               component="a"
               href="tel:+1 (917)200-7609"

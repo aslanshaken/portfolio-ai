@@ -2,7 +2,8 @@ import { Grid, Container, Box, Button, Typography } from '@mui/material';
 import BannerImg from '../assets/images/banner-img.png';
 import { useTheme } from '@mui/material/styles';
 import EmailIcon from '@mui/icons-material/Email';
-import { ReactComponent as BannerNeonText } from '../assets/images/banner-neon-text.svg';
+import Bookk from '../assets/images/bookkeeping.png'
+
 
 const Banner = () => {
   const theme = useTheme();
@@ -11,7 +12,7 @@ const Banner = () => {
       <Box
         sx={{
           background: 'linear-gradient(180deg, rgba(43, 44, 40, 0.00) 39.58%, #2B2C28 88.41%)',
-          paddingBottom: '50px',
+          paddingBottom: '0px',
         }}
       >
         <Container maxWidth="lg">
@@ -140,7 +141,14 @@ const Banner = () => {
             display:{xs:"none" , md:"inline-block"}
           }}
         >
-          <BannerNeonText />
+           <img
+                src={Bookk}
+                alt="Bookkeeping Text"
+                style={{
+                  maxWidth: '100%',
+                  marginBottom: '160px'
+                }}
+              />
         </Box>
       </Box>
     </>
