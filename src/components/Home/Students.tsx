@@ -1,9 +1,9 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
-import { Paper, Container, Grid, Box, Typography, Card } from '@mui/material';
-import Asel from '../assets/images/slider-img.png';
-import Ulan from '../assets/images/ulan.png';
-import Madina from '../assets/images/madina.png';
+import { Paper, Container, Grid, Box, Typography } from '@mui/material';
+import Asel from '../../assets/images/slider-img.png';
+import Ulan from '../../assets/images/ulan.png';
+import Madina from '../../assets/images/madina.png';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
@@ -25,7 +25,8 @@ const Students: React.FC = () => {
     },
     {
       name: 'Улан Досов',
-      description: 'Учится с утра до вечера в университете Нархоз. Очень хотел иметь свой заработок для достижения финансовой незавизимости и самостоятельности.',
+      description:
+        'Учится с утра до вечера в университете Нархоз. Очень хотел иметь свой заработок для достижения финансовой незавизимости и самостоятельности.',
       subDescription:
         'Работает буккипером с Марта 2023 года.Получил свой первый проект Catch Up за $500. После окончания проекта Улан будет вести ежемесячный буккипинг этого же клиента с двумя компаниями. Работа буккипера позволяет Улану совмещать работу и учебу, а так же будучи студентом брать все свои расходы на себя. Планирует самостоятельно оплатить за свое обучение в университете.',
       image: Ulan,
@@ -44,8 +45,10 @@ const Students: React.FC = () => {
       <Grid container spacing={0} py={10}>
         <Grid item xs={12}>
           <Typography variant="h4" mb={5}>
-          <Box component="span" className="TextGradientPrimary">МОИ СТУДЕНТЫ</Box> КОТОРЫЕ УЖЕ
-            ЗАРАБАТЫВАЮТ НА БУККИПИНГЕ
+            <Box component="span" className="TextGradientPrimary">
+              МОИ СТУДЕНТЫ
+            </Box>{' '}
+            КОТОРЫЕ УЖЕ ЗАРАБАТЫВАЮТ НА БУККИПИНГЕ
           </Typography>
           <Box
             sx={{
@@ -57,6 +60,7 @@ const Students: React.FC = () => {
             }}
           >
             <Carousel
+              animation="slide"
               sx={{
                 maxWidth: 886,
                 margin: 'auto',
@@ -105,7 +109,9 @@ const ItemComponent: React.FC<ItemComponentProps> = ({ item }) => {
         </Grid>
         <Grid item md={8}>
           <Typography variant="h2">{item.name}</Typography>
-         <Typography variant="h6" color='gray' marginTop='10px'>Работает из Казахстана</Typography> 
+          <Typography variant="h6" color="gray" marginTop="10px">
+            Работает из Казахстана
+          </Typography>
           <p>
             <Box
               component="span"

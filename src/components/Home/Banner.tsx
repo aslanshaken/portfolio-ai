@@ -1,9 +1,8 @@
 import { Grid, Container, Box, Button, Typography } from '@mui/material';
-import BannerImg from '../assets/images/banner-img.png';
+import BannerImg from '../../assets/images/banner-img.png';
 import { useTheme } from '@mui/material/styles';
 import EmailIcon from '@mui/icons-material/Email';
-import Bookk from '../assets/images/bookkeeping.png'
-
+import { ReactComponent as BannerNeonText } from '../../assets/images/banner-neon-text.svg';
 
 const Banner = () => {
   const theme = useTheme();
@@ -12,7 +11,10 @@ const Banner = () => {
       <Box
         sx={{
           background: 'linear-gradient(180deg, rgba(43, 44, 40, 0.00) 39.58%, #2B2C28 88.41%)',
-          paddingBottom: '0px',
+          paddingBottom: '100px',
+          '@media(max-width:767px)': {
+            paddingBottom: 0,
+          },
         }}
       >
         <Container maxWidth="lg">
@@ -20,14 +22,16 @@ const Banner = () => {
             <Grid item sm={6} md>
               <Box
                 sx={{
-                  paddingTop: '70px',
+                  paddingTop: '140px',
+                  '@media(max-width:767px)': {
+                    paddingTop: '40px',
+                  },
                 }}
               >
                 <Typography
                   variant="h1"
                   sx={{
                     color: '#fff',
-
                     marginTop: 0,
                     marginBottom: '40px',
                   }}
@@ -41,6 +45,11 @@ const Banner = () => {
                     color: '#fff',
                     fontSize: '1.5rem',
                     fontWeight: 500,
+                    '@media(max-width:767px)': {
+                      fontSize: '1.2rem',
+                      marginTop: '0px',
+                      marginBottom: '0',
+                    },
                   }}
                 >
                   С нуля за 2 месяца от{' '}
@@ -52,13 +61,17 @@ const Banner = () => {
                 <Button
                   variant="contained"
                   sx={{
-                    marginTop: '60px',
                     borderRadius: '500px',
                     fontSize: 22,
                     padding: '11px 28px',
                     background: 'linear-gradient(132deg, #232323 0%, rgba(35, 35, 35, 0.49) 100%)',
                     boxShadow:
                       '10px 9px 12px 0px rgba(3, 3, 3, 0.79) inset, 1px -1px 19px 0px rgba(133, 133, 133, 0.25) inset',
+                    '@media(max-width:767px)': {
+                      fontSize: 16,
+                      marginTop: '40px',
+                      padding: '11px 20px',
+                    },
                   }}
                 >
                   Оставить заявку
@@ -138,17 +151,12 @@ const Banner = () => {
             '& svg': {
               width: '100%',
             },
-            display:{xs:"none" , md:"inline-block"}
+            '@media(max-width:767px)': {
+              zIndex: 1,
+            },
           }}
         >
-           <img
-                src={Bookk}
-                alt="Bookkeeping Text"
-                style={{
-                  maxWidth: '100%',
-                  marginBottom: '160px'
-                }}
-              />
+          <BannerNeonText />
         </Box>
       </Box>
     </>
