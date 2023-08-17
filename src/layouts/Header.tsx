@@ -71,7 +71,7 @@ export default function DrawerAppBar(props: Props) {
         to="/"
         sx={{
           fontWeight: 700,
-          fontSize: '1rem',
+          fontSize: '1.5rem',
           color: '#2B2C28',
           backgroundColor: '#ececec',
           pl: 2,
@@ -81,9 +81,13 @@ export default function DrawerAppBar(props: Props) {
           display: 'flex',
         }}
       >
-        Професиональный
-        <br />
-        Буккипер
+        <div>
+          <span className="TextGradientPrimary">П</span>
+          рофесиональный
+          <br/>
+          <span className="TextGradientPrimary">Б</span>
+          уккипер
+        </div>
       </Typography>
       <Divider />
       <List>
@@ -95,7 +99,7 @@ export default function DrawerAppBar(props: Props) {
               to={pagePaths[index]}
               activeClass="active"
               spy={true}
-              smooth={true}
+              smooth={false}
               offset={-90}
               sx={{
                 color: 'white',
@@ -155,14 +159,18 @@ export default function DrawerAppBar(props: Props) {
                 sx={{
                   mr: 2,
                   fontWeight: 700,
-                  fontSize: { xs: '1.2rem', sm: '1.3rem', xl: '2rem' },
+                  fontSize: { xs: '1.6rem', sm: '1.8rem', xl: '2rem' },
                   color: 'inherit',
                   textDecoration: 'none',
                 }}
               >
-                Професиональный
-                <br />
-                Буккипер
+                <div>
+                  <span className="TextGradientPrimary">П</span>
+                  рофесиональный
+                  <br/>
+                  <span className="TextGradientPrimary">Б</span>
+                  уккипер
+                </div>
               </Typography>
               <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-evenly' }}>
                 {navItems.map((item, index) => (
@@ -172,7 +180,7 @@ export default function DrawerAppBar(props: Props) {
                     to={pagePaths[index]}
                     activeClass="active"
                     spy={true}
-                    smooth={true}
+                    smooth={false}
                     offset={-125}
                     sx={{
                       my: 2,
@@ -193,21 +201,21 @@ export default function DrawerAppBar(props: Props) {
                 ))}
               </Box>
               <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center', gap: 1 }}>
-                <Box component="a" href="tel:+4733378901">
+                <Box component="a" href="tel:+19172007609">
                   <PhoneIcon />
                 </Box>
                 <Typography
                   component="a"
-                  href="tel:+4733378901"
+                  href="tel:+19172007609"
                   sx={{
                     fontWeight: 500,
-                    fontSize: '24px',
+                    fontSize: '15px',
                     color: 'inherit',
                     textDecoration: 'none',
                     display: { xs: 'none', md: 'inline-block' },
                   }}
                 >
-                  +1(917)-200-7609
+                  +1 (917)-200-7609
                 </Typography>
               </Box>
             </Toolbar>
@@ -221,7 +229,7 @@ export default function DrawerAppBar(props: Props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },

@@ -46,7 +46,8 @@ const Aynur = () => {
                 }}
               >
                 <Typography>Практикующий финансовый аналитик</Typography>
-                <Typography>Основатель бУХГАЛТЕРСКОЙ компании Go4Profit</Typography>
+                <Typography>СТЕПЕНЬ Бакалавра В ФИНАНСАХ в США</Typography>
+                <Typography>Основатель БУХГАЛТЕРСКОЙ компании Go4Profit</Typography>
                 <Typography>Преподаватель в онлайн-школе буккипинга</Typography>
               </Box>
               <Button
@@ -105,7 +106,7 @@ const Aynur = () => {
                   display: 'flex',
                   alignItems: 'center',
                   flexWrap: 'wrap',
-                  gap: 4,
+                  gap: 2,
                 }}
               >
                 <Box
@@ -113,7 +114,7 @@ const Aynur = () => {
                   src={Qbo}
                   alt="Banner image"
                   sx={{
-                    maxWidth: '100%',
+                    maxWidth: '80%',
                   }}
                 />
 
@@ -122,7 +123,7 @@ const Aynur = () => {
                   src={Gusto}
                   alt="Banner image"
                   sx={{
-                    maxWidth: '100%',
+                    maxWidth: '80%',
                   }}
                 />
 
@@ -131,7 +132,7 @@ const Aynur = () => {
                   src={Financial}
                   alt="Banner image"
                   sx={{
-                    maxWidth: '100%',
+                    maxWidth: '80%',
                   }}
                 />
 
@@ -140,7 +141,7 @@ const Aynur = () => {
                   src={Shopify}
                   alt="Banner image"
                   sx={{
-                    maxWidth: '100%',
+                    maxWidth: '80%',
                   }}
                 />
 
@@ -149,7 +150,7 @@ const Aynur = () => {
                   src={Bbl}
                   alt="Banner image"
                   sx={{
-                    maxWidth: '100%',
+                    maxWidth: '80%',
                   }}
                 />
 
@@ -158,7 +159,7 @@ const Aynur = () => {
                   src={Qbo2}
                   alt="Banner image"
                   sx={{
-                    maxWidth: '100%',
+                    maxWidth: '80%',
                   }}
                 />
               </Box>
@@ -169,7 +170,8 @@ const Aynur = () => {
                 src={AynurImage}
                 alt="image"
                 sx={{
-                  maxWidth: '100%',
+                  maxWidth: '75%',
+                  display: { xs: 'none', md: 'flex' },
                 }}
               />
             </Grid>
