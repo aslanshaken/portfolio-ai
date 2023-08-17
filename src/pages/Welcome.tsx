@@ -4,14 +4,13 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import UserImg from '../assets/images/modal-img.png';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import SendIcon from '@mui/icons-material/Send';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { useNavigate } from 'react-router-dom';
-import { YouTube } from '@mui/icons-material';
+
 const modalwidget = {
   padding: '30px 10px',
   display: 'flex',
