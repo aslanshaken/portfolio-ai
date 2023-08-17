@@ -10,51 +10,23 @@ import ListItem from '@mui/material/ListItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { ReactComponent as PhoneIcon } from '../assets/icons/phone-circle.svg';
+import Phone from '../assets/images/phone.png';
 import Container from '@mui/material/Container';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
-
-interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window?: () => Window;
-  children: React.ReactElement;
-}
-
-function ElevationScroll(props: Props) {
-  const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
-  const trigger = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: 0,
-    target: window ? window() : undefined,
-  });
-
-  return React.cloneElement(children, {
-    style: {
-      backgroundColor: trigger ? '#2B2C28' : 'transparent',
-      borderColor: trigger ? 'rgba(255, 255, 255,0.1)' : 'transparent',
-    },
-  });
-}
 
 const drawerWidth = 240;
 const navItems = ['Программа', 'Тарифы', 'О нас', 'Контакты'];
 const pagePaths = ['program', 'tariffs', 'about', 'contacts'];
 
-export default function DrawerAppBar(props: Props) {
-  const { window } = props;
+export default function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+
+  const windowObj = typeof window !== 'undefined' ? window : undefined;
 
   // Function to close the drawer when a menu item is clicked
   const handleMenuItemClick = () => {
@@ -123,105 +95,109 @@ export default function DrawerAppBar(props: Props) {
     </Box>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container = windowObj !== undefined ? () => windowObj.document.body : undefined;
 
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <ElevationScroll {...props}>
-        <AppBar
-          component="nav"
-          sx={{
-            boxShadow: 'none',
-            borderBottom: '1px solid',
-            paddingY: '15px',
-          }}
-        >
-          <Container maxWidth="xl">
-            <Toolbar
+      <AppBar
+        component="nav"
+        sx={{
+          boxShadow: 'none',
+          paddingY: '15px',
+          backgroundColor: '#2B2C28'
+        }}
+      >
+        <Container maxWidth="xl">
+          <Toolbar
+            sx={{
+              justifyContent: 'space-between',
+            }}
+          >
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { md: 'none' } }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography
+              noWrap
+              component={Link}
+              to="/"
               sx={{
-                justifyContent: 'space-between',
+                mr: 2,
+                fontWeight: 700,
+                fontSize: { xs: '1.6rem', sm: '1.8rem', xl: '2rem' },
+                color: 'inherit',
+                textDecoration: 'none',
               }}
             >
-              <IconButton
-                color="inherit"
-                aria-label="open drawer"
-                edge="start"
-                onClick={handleDrawerToggle}
-                sx={{ mr: 2, display: { md: 'none' } }}
-              >
-                <MenuIcon />
-              </IconButton>
-              <Typography
-                noWrap
-                component={Link}
-                to="/"
-                sx={{
-                  mr: 2,
-                  fontWeight: 700,
-                  fontSize: { xs: '1.6rem', sm: '1.8rem', xl: '2rem' },
-                  color: 'inherit',
-                  textDecoration: 'none',
-                }}
-              >
-                <div>
-                  <span className="TextGradientPrimary">П</span>
-                  рофесиональный
-                  <br/>
-                  <span className="TextGradientPrimary">Б</span>
-                  уккипер
-                </div>
-              </Typography>
-              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-evenly' }}>
-                {navItems.map((item, index) => (
-                  <Typography
-                    component={ScrollLink}
-                    key={item}
-                    to={pagePaths[index]}
-                    activeClass="active"
-                    spy={true}
-                    smooth={false}
-                    offset={-125}
-                    sx={{
-                      my: 2,
-                      color: 'white',
-                      display: 'block',
-                      fontWeight: 500,
-                      fontSize: { md: '16px', xl: '20px' },
-                      textTransform: 'none',
-                      textDecoration: 'none',
-                      cursor: 'pointer',
-                      '&.active': {
-                        color: '#41635C',
-                      },
-                    }}
-                  >
-                    {item}
-                  </Typography>
-                ))}
-              </Box>
-              <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center', gap: 1 }}>
-                <Box component="a" href="tel:+19172007609">
-                  <PhoneIcon />
-                </Box>
+              <div>
+                <span className="TextGradientPrimary">П</span>
+                рофесиональный
+                <br/>
+                <span className="TextGradientPrimary">Б</span>
+                уккипер
+              </div>
+            </Typography>
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-evenly' }}>
+              {navItems.map((item, index) => (
                 <Typography
-                  component="a"
-                  href="tel:+19172007609"
+                  component={ScrollLink}
+                  key={item}
+                  to={pagePaths[index]}
+                  activeClass="active"
+                  spy={true}
+                  smooth={false}
+                  offset={-125}
                   sx={{
+                    my: 2,
+                    color: 'white',
+                    display: 'block',
                     fontWeight: 500,
-                    fontSize: '15px',
-                    color: 'inherit',
+                    fontSize: { md: '16px', xl: '20px' },
+                    textTransform: 'none',
                     textDecoration: 'none',
-                    display: { xs: 'none', md: 'inline-block' },
+                    cursor: 'pointer',
+                    '&.active': {
+                      color: '#41635C',
+                    },
                   }}
                 >
-                  +1 (917)-200-7609
+                  {item}
                 </Typography>
+              ))}
+            </Box>
+            <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center', gap: 1 }}>
+              <Box component="a" marginRight="10px" href="tel:+19172007609">
+                <img
+                  src={Phone}
+                  alt="Phone icon"
+                  style={{
+                    maxWidth: '100%',
+                  }}
+                />
               </Box>
-            </Toolbar>
-          </Container>
-        </AppBar>
-      </ElevationScroll>
+              <Typography
+                component="a"
+                href="tel:+19172007609"
+                sx={{
+                  fontWeight: 500,
+                  fontSize: '15px',
+                  color: 'inherit',
+                  textDecoration: 'none',
+                  display: { xs: 'none', md: 'inline-block' },
+                }}
+              >
+                +1 (917)-200-7609
+              </Typography>
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
       <Box component="nav">
         <Drawer
           container={container}

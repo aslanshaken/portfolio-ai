@@ -11,8 +11,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import SendIcon from '@mui/icons-material/Send';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { useNavigate } from 'react-router-dom';
+import { YouTube } from '@mui/icons-material';
 const modalwidget = {
-  padding: '30px 30px',
+  padding: '30px 10px',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -22,7 +23,7 @@ const modalwidget = {
   //   overflowX: 'hidden',
   '@media (max-width:767px)': {
     justifyContent: 'flex-start',
-    padding: '30px 20px',
+    padding: '30px 10px',
   },
 
   '& .MuiPaper-root': {
@@ -35,7 +36,7 @@ const modalwidget = {
   '& .MuiTypography-h3': {
     fontSize: '1.875rem',
     color: '#FFFFFF !important',
-    fontWeight: '900',
+    fontWeight: '400',
     my: '20px',
     textAlign: 'center',
   },
@@ -43,19 +44,19 @@ const modalwidget = {
     color: 'rgba(255, 255, 255, 0.60)',
   },
   '& .ModalButton': {
-    borderRadius: '14px',
-    backgroundColor: '#C4C4C4',
-    color: 'black',
-    padding: '1rem 0.75rem',
+    borderRadius: '20px',
+    backgroundColor: '#41635C',
+    color: 'white',
+    padding: '1.5rem 2rem',
     textTransform: 'none',
     width: '100%',
     maxWidth: '445px',
     border: 'none',
-    fontSize: '14px',
+    fontSize: '16px',
     fontWeight: 500,
     '&:hover': {
-      backgroundColor: '#41635C ',
-      color: '#fff',
+      backgroundColor: 'white ',
+      color: 'black',
     },
   },
   '& .Icon': {
@@ -86,11 +87,6 @@ const modalwidget = {
 
 export default function CustomizedDialogs() {
   const navigate = useNavigate();
-
-  function handleClick() {
-    navigate('/home');
-  }
-
   return (
     <Box sx={modalwidget}>
       <Box
@@ -116,26 +112,23 @@ export default function CustomizedDialogs() {
           },
         }}
       >
-        <Box className="Icon" component="a" href="/#">
-          <FacebookOutlinedIcon />
-        </Box>
-        <Box className="Icon" component="a" href="/#">
-          <TwitterIcon />
-        </Box>
-        <Box className="Icon" component="a" href="/#">
-          <LinkedInIcon />
-        </Box>
-        <Box className="Icon" component="a" href="/#">
-          <YouTubeIcon />
-        </Box>
-        <Box className="Icon" component="a" href="/#">
+        <Box className="Icon" component="a" target='_blank' href="https://www.instagram.com/ainura.finance">
           <InstagramIcon />
         </Box>
-        <Box className="Icon" component="a" href="/#">
+        <Box className="Icon" component="a" target='_blank' href="https://www.facebook.com/profile.php?id=100090558631045&mibextid=9R9pXO">
+          <FacebookOutlinedIcon />
+        </Box>
+        <Box className="Icon" component="a" target='_blank' href="https://www.linkedin.com/in/ainurzhunussova">
+          <LinkedInIcon />
+        </Box>
+        <Box className="Icon" component="a" target='_blank' href="/#">
           <SendIcon />
         </Box>
-        <Box className="Icon" component="a" href="/#">
+        <Box className="Icon" component="a" target='_blank' href="/#">
           <WhatsAppIcon />
+        </Box>
+        <Box className="Icon" component="a" target='_blank' href="https://www.youtube.com/@go4profitadvisor">
+          <YouTubeIcon />
         </Box>
       </Box>
       <Typography mb={5} textAlign="center">
@@ -150,14 +143,11 @@ export default function CustomizedDialogs() {
           gap: 2,
         }}
       >
-        <Button className="ModalButton" variant="contained" onClick={handleClick}>
+        <Button className="ModalButton" variant="contained" onClick={()=> window.open('/course', '_blank')}>
           Как стать бухгалтером за 2 месяца
         </Button>
-        <Button className="ModalButton" variant="contained">
+        <Button className="ModalButton" onClick={()=> window.open('https://www.go4profit.us', '_blank')} variant="contained"> 
           Быть клиентом Go4Profit
-        </Button>
-        <Button className="ModalButton" variant="contained">
-          Как предпринимателю начать контролировать свои деньги
         </Button>
         <Button className="ModalButton" variant="contained">
           Top 100 Tax Deductions 🤝
@@ -165,12 +155,12 @@ export default function CustomizedDialogs() {
       </Box>
       <Box
         sx={{
-          marginTop: '3rem',
+          marginTop: '5rem',
           color: 'white',
           textAlign: 'center',
         }}
       >
-        © 2023 A. Zhunussova All rights reserved.{' '}
+        © 2023 Ainur Zhunussova. All rights reserved. {' '}
       </Box>
     </Box>
   );

@@ -7,7 +7,7 @@ const Routing = () => {
   return (
     <Routes>
       <Route path="/" element={<Welcome />} />
-      <Route path="/Home" element={<Home />} />
+      <Route path="/course" element={<Home />} />
     </Routes>
   );
 };

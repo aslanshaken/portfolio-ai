@@ -2,7 +2,7 @@ import { Grid, Container, Box, Button, Typography } from '@mui/material';
 import BannerImg from '../../assets/images/banner-img.png';
 import { useTheme } from '@mui/material/styles';
 import EmailIcon from '@mui/icons-material/Email';
-import { ReactComponent as BannerNeonText } from '../../assets/images/banner-neon-text.svg';
+import Bookkeeper from '../../assets/images/bookkeeping.png'
 
 const Banner = () => {
   const theme = useTheme();
@@ -156,7 +156,13 @@ const Banner = () => {
             },
           }}
         >
-          <BannerNeonText />
+          <img
+            src={Bookkeeper}
+            alt="Bookkeeper"
+            style={{
+              maxWidth: '100%',
+            }}
+          />
         </Box>
       </Box>
     </>
