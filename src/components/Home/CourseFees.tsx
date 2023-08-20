@@ -99,7 +99,7 @@ const CourseFees = () => {
               <ListItem>
                 {' '}
                 <CheckCircleRoundedIcon sx={{ color: '#41635C', mr: '10px' }} />
-                Доступа к материалам: 6 месяцев
+                Доступ к материалам: 6 месяцев
               </ListItem>
             </List>
             <Box>
@@ -172,12 +172,12 @@ const CourseFees = () => {
               <ListItem>
                 {' '}
                 <CheckCircleRoundedIcon sx={{ color: '#41635C', mr: '10px' }} />
-                +Личная консультация от Айнур: как открыть свою бухгалтерскую компанию в Америке
+                +Личная консультация от Айнур
               </ListItem>
               <ListItem>
                 {' '}
                 <CheckCircleRoundedIcon sx={{ color: '#41635C', mr: '10px' }} />
-                Доступа к материалам: 12 месяцев
+                Доступ к материалам: 12 месяцев
               </ListItem>
             </List>
             <Box>
@@ -249,7 +249,7 @@ const CourseFees = () => {
               <ListItem>
                 {' '}
                 <CheckCircleRoundedIcon sx={{ color: '#41635C', mr: '10px' }} />
-                Личные встречи с Айнур
+                Личные встречи с Айнур каждую неделю
               </ListItem>
               <ListItem>
                 {' '}

@@ -2,7 +2,7 @@ import { Grid, Container, Box, Typography, Button } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import { useTheme } from '@mui/material/styles';
 import Qbo from '../../assets/images/qbo-badge.png';
-import Qbo2 from '../../assets/images/qbo-badge.png';
+import Qbo2 from '../../assets/images/QBO Advanced badge.png';
 import Gusto from '../../assets/images/gusto-gold-partner.png';
 import Financial from '../../assets/images/financial-analysis-badge.png';
 import Shopify from '../../assets/images/shopify-partner.png';
@@ -46,8 +46,9 @@ const Aynur = () => {
                 }}
               >
                 <Typography>Практикующий финансовый аналитик</Typography>
-                <Typography>СТЕПЕНЬ Бакалавра В ФИНАНСАХ в США</Typography>
-                <Typography>Основатель БУХГАЛТЕРСКОЙ компании Go4Profit</Typography>
+                <Typography>Степень Бакалавра В Финансах в США</Typography>
+                <Typography>Основатель Бухгалтерской компании Go4Profit</Typography>
+                <Typography>Клиенты с Forbes</Typography>
                 <Typography>Преподаватель в онлайн-школе буккипинга</Typography>
               </Box>
               <Button

@@ -131,7 +131,7 @@ export default function CustomizedDialogs() {
         </Box>
       </Box>
       <Typography mb={5} textAlign="center">
-        I’m going to show you how to pay less in taxes, sometimes $0.
+        Мудрый человек держит деньги в голове, но не в сердце
       </Typography>
       <Box
         sx={{

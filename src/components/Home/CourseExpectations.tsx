@@ -88,7 +88,7 @@ export default function ResponsiveGrid() {
               <Stack>
                 <Typography variant="h3">Обучающая онлайн-платформа</Typography>
                 <Box component="p">
-                  У каждого ученика будет личный кабинет, где он сможет просматривать уроки и сдавать экзамен.
+                  У каждого ученика будет личный кабинет, где он сможет просматривать уроки и сдавать экзамен в удобное вам время.
                 </Box>
               </Stack>
             </Box>
@@ -106,7 +106,7 @@ export default function ResponsiveGrid() {
             <Box>
               <Typography variant="h2">03</Typography>
               <Stack>
-                <Typography variant="h3">Созвон с Айнур один на один</Typography>
+                <Typography variant="h3">*Созвон с Айнур один на один</Typography>
                 <Box component="p">
                   При сдачи экзамена на отлично, вы получите личную консультацию от Айнур. В ходе этой консультации вы
                   сможете разработать план для успешного начала собственной деятельности и открытия собственной
@@ -129,7 +129,7 @@ export default function ResponsiveGrid() {
             <Box>
               <Typography variant="h2">05</Typography>
               <Stack>
-                <Typography variant="h3">Закрытое клуб буккиперов</Typography>
+                <Typography variant="h3">Закрытый клуб буккиперов</Typography>
                 <Box component="p">
                   Закрытое сообщество в телеграм канале и на Facebook будет доступно каждому ученику.
                 </Box>
@@ -138,7 +138,7 @@ export default function ResponsiveGrid() {
             <Box>
               <Typography variant="h2">06</Typography>
               <Stack>
-                <Typography variant="h3">Пошаговый план как найти первую работу или клиента</Typography>
+                <Typography variant="h3">*Пошаговый план как найти первую работу или клиента</Typography>
                 <Box component="p">
                   В Бонусном модуле предоставлены все необходимые шаги, которые помогут вам успешно найти первую работу
                   или клиента.
