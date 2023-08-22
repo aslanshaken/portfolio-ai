@@ -69,7 +69,7 @@ const coursefees_grid = {
 const CourseFees = () => {
   return (
     <Container id="tariffs" sx={{ pt: 10 }}>
-      <Typography variant="h2" mb={6}>
+      <Typography variant="h2" mb={2}>
         <Box component="span" className="TextGradientPrimary">
           ТАРИФЫ{' '}
         </Box>{' '}
@@ -138,7 +138,7 @@ const CourseFees = () => {
                 $500
               </Typography>
             </Box>
-            <Button variant="contained">Приобрести</Button>
+            <Button variant="contained" target='_blank' href="https://buy.stripe.com/28o8zUdYUdqlgV27ss">Приобрести</Button>
           </Paper>
         </Grid>
         <Grid item xs={12} md={4} sx={coursefees_grid}>
@@ -210,7 +210,7 @@ const CourseFees = () => {
                 $850
               </Typography>
             </Box>
-            <Button variant="contained">Приобрести</Button>
+            <Button variant="contained" target='_blank' href="https://buy.stripe.com/14k7vQ1c8gCxawE289">Приобрести</Button>
           </Paper>
         </Grid>
         <Grid item xs={12} md={4} sx={coursefees_grid}>
@@ -287,6 +287,8 @@ const CourseFees = () => {
           </Paper>
           <Button
             variant="contained"
+             target='_blank' 
+              href="https://forms.gle/NCEaETfLQUpgdvFp7"
             sx={{
               background: '#41635C',
               justifyContent: 'center',
@@ -305,6 +307,7 @@ const CourseFees = () => {
       </Grid>
       <Button
         variant="contained"
+        onClick={()=> window.open("https://forms.gle/6P1oDBp2BXWKbNJh7", '_blank')}
         sx={{
           background: 'var(--yellow, linear-gradient(137deg, #F9CF3D 0%, #FF9B3F 100%))',
           justifyContent: 'center',

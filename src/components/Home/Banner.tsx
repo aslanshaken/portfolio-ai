@@ -60,6 +60,8 @@ const Banner = () => {
                 </Box>
                 <Button
                   variant="contained"
+                   target='_blank' 
+                   href="https://forms.gle/6P1oDBp2BXWKbNJh7"
                   sx={{
                     borderRadius: '500px',
                     fontSize: 22,

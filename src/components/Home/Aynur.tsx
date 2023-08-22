@@ -53,6 +53,8 @@ const Aynur = () => {
               </Box>
               <Button
                 variant="contained"
+                target='_blank' 
+                href="https://forms.gle/6P1oDBp2BXWKbNJh7"
                 sx={{
                   marginTop: '60px',
                   marginBottom: '60px',
