@@ -307,7 +307,7 @@ const CourseFees = () => {
       </Grid>
       <Button
         variant="contained"
-        onClick={()=> window.open("https://forms.gle/6P1oDBp2BXWKbNJh7", '_blank')}
+        onClick={()=> window.open("https://wa.me/9172007609", '_blank')}
         sx={{
           background: 'var(--yellow, linear-gradient(137deg, #F9CF3D 0%, #FF9B3F 100%))',
           justifyContent: 'center',

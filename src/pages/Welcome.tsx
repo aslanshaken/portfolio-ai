@@ -48,7 +48,7 @@ const modalwidget = {
     padding: '1.5rem 2rem',
     textTransform: 'none',
     width: '100%',
-    maxWidth: '445px',
+    maxWidth: '545px',
     border: 'none',
     fontSize: '16px',
     fontWeight: 500,
@@ -146,8 +146,8 @@ export default function CustomizedDialogs() {
         <Button className="ModalButton" onClick={()=> window.open('https://www.go4profit.us', '_blank')} variant="contained"> 
           Быть клиентом Go4Profit
         </Button>
-        <Button className="ModalButton" variant="contained" onClick={()=> window.open('https://go4profit.us/why-us', '_blank')}>
-          Top 100 Tax Deductions 🤝
+        <Button className="ModalButton" variant="contained" onClick={()=> window.open('https://go4profit.us/tax-deductions', '_blank')}>
+          Топ-100 налоговых вычетов для бизнесов в Америке 🤝
         </Button>
       </Box>
       <Box
