@@ -9,7 +9,6 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import SendIcon from '@mui/icons-material/Send';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { useNavigate } from 'react-router-dom';
 
 const modalwidget = {
   padding: '30px 10px',
@@ -85,7 +84,6 @@ const modalwidget = {
 };
 
 export default function CustomizedDialogs() {
-  const navigate = useNavigate();
   return (
     <Box sx={modalwidget}>
       <Box
@@ -148,7 +146,7 @@ export default function CustomizedDialogs() {
         <Button className="ModalButton" onClick={()=> window.open('https://www.go4profit.us', '_blank')} variant="contained"> 
           Быть клиентом Go4Profit
         </Button>
-        <Button className="ModalButton" variant="contained">
+        <Button className="ModalButton" variant="contained" onClick={()=> window.open('https://go4profit.us/why-us', '_blank')}>
           Top 100 Tax Deductions 🤝
         </Button>
       </Box>
