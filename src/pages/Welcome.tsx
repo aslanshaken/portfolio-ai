@@ -128,9 +128,9 @@ export default function CustomizedDialogs() {
           <YouTubeIcon />
         </Box>
       </Box>
-      <Typography mb={5} textAlign="center">
+      {/* <Typography mb={5} textAlign="center">
         Мудрый человек держит деньги в голове, но не в сердце
-      </Typography>
+      </Typography> */}
       <Box
         sx={{
           display: 'flex',
