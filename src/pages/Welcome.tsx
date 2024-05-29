@@ -181,7 +181,7 @@ const CustomizedDialogs = () => (
     <CourseCard
       title="Нужна помощь с ведением бухгалтерии?"
       description="Расширьте возможности своего бизнеса, передав бухгалтерию на аутсорсинг. Давайте встретимся и посмотрим, подойдет ли оно!"
-      buttonText="Выберите дату и время (Это бесплатно!)"
+      buttonText="Выберите время (Это бесплатно)"
       buttonLink="/accounting-help"
       secondButtonLink='https://go4profit.us/'
       secondButtonText='Сайт Go4Profit'
@@ -197,7 +197,7 @@ const CustomizedDialogs = () => (
     <CourseCard
       title="Тренинг в Quickbooks"
       description="Персонализированное индивидуальное обучение по вопросам финансов вашего бизнеса и помощь QuickBooks"
-      buttonText="Выберите дату и время"
+      buttonText="Выберите время"
       buttonLink="/quickbooks-courses"
       secondButtonLink=''
       secondButtonText=''
