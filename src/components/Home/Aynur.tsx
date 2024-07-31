@@ -54,7 +54,7 @@ const Aynur = () => {
               <Button
                 variant="contained"
                 target='_blank' 
-                href="https://forms.gle/6P1oDBp2BXWKbNJh7"
+                href="https://wa.me/77776270419?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2[…]%20%D0%B1%D1%83%D0%BA%D0%BA%D0%B8%D0%BF%D0%B8%D0%BD%D0%B3%D1%83%20"
                 sx={{
                   marginTop: '60px',
                   marginBottom: '60px',
@@ -66,7 +66,7 @@ const Aynur = () => {
                     '10px 9px 12px 0px rgba(3, 3, 3, 0.79) inset, 1px -1px 19px 0px rgba(133, 133, 133, 0.25) inset',
                 }}
               >
-                Оставить заявку
+                Написать менеджеру
                 <Box
                   component="span"
                   sx={{

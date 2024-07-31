@@ -210,7 +210,7 @@ const CourseFees = () => {
                 $957
               </Typography>
             </Box>
-            <Button variant="contained" target='_blank' href="https://buy.stripe.com/14k7vQ1c8gCxawE289">Приобрести</Button>
+            <Button variant="contained" target='_blank' href="https://buy.stripe.com/14k7vQ1c8gCxawE289">Купить</Button>
           </Paper>
         </Grid>
         <Grid item xs={12} md={4} sx={coursefees_grid}>
