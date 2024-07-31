@@ -203,11 +203,11 @@ const CourseFees = () => {
                     height: '3px',
                   }}
                 ></Box>
-                $1050
+                $1500
               </Typography>
               <br />
               <Typography component="span" sx={{ fontWeight: '600', fontSize: { color: '#828282' } }}>
-                $850
+                $957
               </Typography>
             </Box>
             <Button variant="contained" target='_blank' href="https://buy.stripe.com/14k7vQ1c8gCxawE289">Приобрести</Button>
