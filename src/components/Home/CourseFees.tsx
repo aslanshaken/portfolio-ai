@@ -83,23 +83,17 @@ const CourseFees = () => {
               <ListItem>
                 {' '}
                 <CheckCircleRoundedIcon sx={{ color: '#41635C', mr: '10px' }} />
-                Доступно с 1 по 15 модули
+                Полное техническое знание по Quikcbooks
               </ListItem>
               <ListItem>
                 {' '}
                 <CheckCircleRoundedIcon sx={{ color: '#41635C', mr: '10px' }} />
-                Доступ к участникам курса, которые успешно завершили программу и уже работают в соответствующей сфере.
-                Они будут доступны в общем чате, где готовы ответить на ваши вопросы.
+                Доступно с 1 по 10 модуль
               </ListItem>
               <ListItem>
                 {' '}
                 <CheckCircleRoundedIcon sx={{ color: '#41635C', mr: '10px' }} />
-                FINAL EXAM
-              </ListItem>
-              <ListItem>
-                {' '}
-                <CheckCircleRoundedIcon sx={{ color: '#41635C', mr: '10px' }} />
-                Доступ к материалам: 6 месяцев
+                Доступ на курсы 6 месяцев
               </ListItem>
             </List>
             <Box>
@@ -138,7 +132,7 @@ const CourseFees = () => {
                 $500
               </Typography>
             </Box>
-            <Button variant="contained" target='_blank' href="https://buy.stripe.com/28o8zUdYUdqlgV27ss">Приобрести</Button>
+            <Button variant="contained" target='_blank' href="https://buy.stripe.com/cN2eYi1c8gCx7ksaEQ">Приобрести</Button>
           </Paper>
         </Grid>
         <Grid item xs={12} md={4} sx={coursefees_grid}>
@@ -173,6 +167,11 @@ const CourseFees = () => {
                 {' '}
                 <CheckCircleRoundedIcon sx={{ color: '#41635C', mr: '10px' }} />
                 +Личная консультация от Айнур
+              </ListItem>
+              <ListItem>
+                {' '}
+                <CheckCircleRoundedIcon sx={{ color: '#41635C', mr: '10px' }} />
+                Доступ к участникам курса, которые успешно завершили программу и уже работают в соответствующей сфере. Они будут доступны в общем чате, где готовы ответить на ваши вопросы.
               </ListItem>
               <ListItem>
                 {' '}
