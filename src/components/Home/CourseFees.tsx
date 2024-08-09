@@ -132,7 +132,7 @@ const CourseFees = () => {
                 $500
               </Typography>
             </Box>
-            <Button variant="contained" target='_blank' href="https://buy.stripe.com/cN2eYi1c8gCx7ksaEQ">Приобрести</Button>
+            <Button variant="contained" target='_blank' href="https://buy.stripe.com/28o8zUdYUdqlgV27ss">Приобрести</Button>
           </Paper>
         </Grid>
         <Grid item xs={12} md={4} sx={coursefees_grid}>
@@ -209,7 +209,7 @@ const CourseFees = () => {
                 $957
               </Typography>
             </Box>
-            <Button variant="contained" target='_blank' href="https://buy.stripe.com/14k7vQ1c8gCxawE289">Купить</Button>
+            <Button variant="contained" target='_blank' href="https://buy.stripe.com/cN2eYi1c8gCx7ksaEQ">Купить</Button>
           </Paper>
         </Grid>
         <Grid item xs={12} md={4} sx={coursefees_grid}>
